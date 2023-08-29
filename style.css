@@ -1,0 +1,60 @@
+body {
+    padding: 50px;
+}
+
+img {
+width: 100%;
+object-fit: cover;
+}
+
+.battle {
+display: flex;
+justify-content: space-between;
+}
+
+.player {
+width: 50%;
+display: flex
+}
+
+.enemy {
+width: 50%;
+display: flex;
+align-items: center;
+}
+
+.player .player-img {
+width: 200px;
+float: left
+}
+
+.enemy .enemy-img {
+width: 200px;
+float: left
+}
+
+.player-info,
+.enemy-info {
+margin-left: 30px;
+}
+
+.shop {
+    text-align: center
+}
+
+.hide {
+    display: none
+}
+
+@media screen and (max-width: 528px) {
+    body {
+        padding: 0;
+    }
+    .battle {
+        display: flex;
+        flex-direction: column
+    }
+    .player, .enemy {
+        width: 100%
+     }
+}

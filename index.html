@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>RPG Game</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<section class="battle">
+		<div class="player">
+			<div class="player-img">
+				<img src="./images/hero.jpg">				
+			</div>
+			<div class="player-info">
+				<h2>Гравець</h2>
+				<p><button id="superpower" class="hide">Суперсила!</button></p>
+				<p>Им'я: <span id="player-name"></span></p>
+				<p>HP: <span id="player-hp"></span></p>
+				<p>Атака: <span id="player-attack"></span></p>
+				<p>Золото: <span id="player-gold"></span></p>
+				<p>Досвід: <span id="player-exp"></span></p>
+			</div>
+		</div>
+
+		<div class="enemy">
+			<div class="enemy-img">
+				<img id="enemy-pic" src="">				
+			</div>
+			<div class="enemy-info">
+				<h2>Ворог</h2>
+				<p>Им'я: <span id="enemy-name"></span></p>
+				<p>HP: <span id="enemy-hp"></span></p>
+				<p>Атака: <span id="enemy-attack"></span></p>
+				<p>Ви отримаєте золото: <span id="enemy-gold"></span></p>
+				<p>Рівень ворога: <span id="enemy-exp"></span></p>
+				<button id="attack-button">Вдарити ворога!</button>
+			</div>
+			
+			
+		</div>
+	</section>
+	<hr>
+
+	<section class="shop">
+		<h2>Магазин</h2>
+		<p>Додати атаку (10 золота):</p><button id="add-attack"> + 1</button>
+		<p>Додати здоров'я (10 золота):</p><button id="add-hp"> + 10</button>
+	</section>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
